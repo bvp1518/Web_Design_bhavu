@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flot nad clear</title>
-</head>
-<body>
+    <title>Flot and clear</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Fasthand&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
 
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Agdasima', sans-serif;
+
+        }
+
+        .container {
+            width: 900px;
+            border: 2px double rgb(41, 67, 1);
+            background-color: rgb(131, 208, 208);
+            height: 90vh;
+            margin: 34px auto;
+        }
+
+        .item {
+            border: 3px solid red;
+            border-radius: 5px;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: gray;
+            color: rgb(92, 6, 6);
+        }
+
+        #fruit {
+            float: right;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width:48%;
+
+        }
+
+        #stationary {
+            clear: both;
+            /* float: left; */
+            width: 100%;
+        }
+        p,h2{
+            /* text-align: left;
+            text-align: right;
+            text-align:center; */
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 455px;
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h2>fruit</h2>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quam id
+                labore cupiditate optio vitae. Unde cumque optio sint, voluptate placeat culpa nesciunt aut commodi
+                eaque aliquam, ut rem voluptatem?</p>
+        </div>
+        <div id="computer" class="item">
+            <h2>computer</h2>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quam id
+                labore cupiditate optio vitae. Unde cumque optio sint, voluptate placeat culpa nesciunt aut commodi
+                eaque aliquam, ut rem voluptatem?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h2>stationary</h2>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quam id
+                labore cupiditate optio vitae. Unde cumque optio sint, voluptate placeat culpa nesciunt aut commodi
+                eaque aliquam, ut rem voluptatem?</p>
+        </div>
+    </div>
 </body>
+
 </html>
