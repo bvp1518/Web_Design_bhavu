@@ -18,13 +18,23 @@
     .navbar li{
         float: left;
         list-style: none;
-        /* margin: 2px;
-        padding: 2px; */
+        margin:1px 9px;
     
     }
     .navbar li a{
-        padding:4px 4px;
+        padding:3px 3px;
         text-decoration: none;
+    }
+    .search{
+        float:right;
+        padding: 8px 8px;
+        color: aliceblue;
+    }
+    .navbar input{
+        border: 3px solid black;
+        border-radius: 4px;
+        padding: 3px 17px;
+        width: 129px;
     }
     </style>
 </head>
@@ -37,7 +47,10 @@
                 <li><a href="#"></a>Services</li>
                 <li><a href="#">Contact us</a></li>
                 <li><a href="#"></a>Help</li>
-            </ul>
+                <div class="search">
+                <input type="text" name="search" id="serch" placeholder="search this website">
+                </div>
+           </ul>
         </nav>
     </header>
 </body>
