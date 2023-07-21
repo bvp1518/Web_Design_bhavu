@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>intro of display property</title>
     <style>
-      h3 {
+      body {
+        background-color: rgb(131, 213, 215);
+      }
+      h1 {
         text-align: center;
-        color: blue;
+        color: brown;
       }
       table {
+        background-color: rgb(172, 166, 173);
+        margin: auto;
+      }
+      thead {
+        color: blue;
+      }
+      table,
+      th,
+      tr {
         border-collapse: collapse;
         border: 3px solid black;
-        box-sizing: border-box;
-        display: block;
+      }
+      p {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
       }
     </style>
   </head>
 
   <body>
-    <h3>css display property</h3>
+    <h1>CSS display property</h1>
     <p>Property values:</p>
-    <figure class="table">
+    <div class="table">
       <table>
         <thead>
           <tr>
@@ -163,6 +178,6 @@
           </tr>
         </tbody>
       </table>
-    </figure>
+    </div>
   </body>
 </html>
