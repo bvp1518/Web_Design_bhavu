@@ -1,131 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>intro of display property</title>
     <style>
-        h3{
-            text-align: center;
-            color:blue;
-            
-        }
-        .table{
-            border-collapse: collapse;
-            border:3px;
-            box-sizing: border-box;
-        }
+      h3 {
+        text-align: center;
+        color: blue;
+      }
+      table {
+        border-collapse: collapse;
+        border: 3px solid black;
+        box-sizing: border-box;
+        display: block;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h3> css display property</h3>
+  <body>
+    <h3>css display property</h3>
     <p>Property values:</p>
     <figure class="table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Value</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>inline</th>
-                    <td>It is used to displays an element as an inline element.</td>
-                </tr>
-                <tr>
-                    <th>block</th>
-                    <td>It is used to displays an element as a block element</td>
-                </tr>
-                <tr>
-                    <th>contents</th>
-                    <td>It is used to disappear the container.</td>
-                </tr>
-                <tr>
-                    <th>flex</th>
-                    <td>It is used to display an element as a block-level flex container.</td>
-                </tr>
-                <tr>
-                    <th>grid</th>
-                    <td>It is used to display an element as a block-level grid container.</td>
-                </tr>
-                <tr>
-                    <th>inline-block</th>
-                    <td>It is used to display an element as an inline-level block container.</td>
-                </tr>
-                <tr>
-                    <th>inline-flex</th>
-                    <td>It is used to display an element as an inline-level flex container.</td>
-                </tr>
-                <tr>
-                    <th>inline-grid</th>
-                    <td>It is used to display an element as an inline-level grid container.</td>
-                </tr>
-                <tr>
-                    <th>inline-table</th>
-                    <td>It is used to display an inline-level table</td>
-                </tr>
-                <tr>
-                    <th>list-item</th>
-                    <td>It is used to display all the elements in &lt;li&gt; element.</td>
-                </tr>
-                <tr>
-                    <th>run-in</th>
-                    <td>It is used to display an element inline or block level, depending on the context.</td>
-                </tr>
-                <tr>
-                    <th>table</th>
-                    <td>It is used to set the behavior as &lt;table&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>table-caption</th>
-                    <td>It is used to set the behavior as &lt;caption&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>table-column-group</th>
-                    <td>It is used to set the behavior as &lt;column&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>table-header-group</th>
-                    <td>It is used to set the behavior as &lt;header&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>table-footer-group</th>
-                    <td>It is used to set the behavior as &lt;footer&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>table-row-group</th>
-                    <td>It is used to set the behavior as &lt;row&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>table-cell</th>
-                    <td>It is used to set the behavior as &lt;td&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>table-column</th>
-                    <td>It is used to set the behavior as &lt;col&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>table-row</th>
-                    <td>It is used to set the behavior as &lt;tr&gt; for all elements.</td>
-                </tr>
-                <tr>
-                    <th>none</th>
-                    <td>It is used to remove the element.</td>
-                </tr>
-                <tr>
-                    <th>initial</th>
-                    <td>It is used to set the default value.</td>
-                </tr>
-                <tr>
-                    <th>inherit</th>
-                    <td>It is used to inherit the property from it’s parents’ elements.</td>
-                </tr>
-            </tbody>
-        </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>inline</th>
+            <td>It is used to displays an element as an inline element.</td>
+          </tr>
+          <tr>
+            <th>block</th>
+            <td>It is used to displays an element as a block element</td>
+          </tr>
+          <tr>
+            <th>contents</th>
+            <td>It is used to disappear the container.</td>
+          </tr>
+          <tr>
+            <th>flex</th>
+            <td>
+              It is used to display an element as a block-level flex container.
+            </td>
+          </tr>
+          <tr>
+            <th>grid</th>
+            <td>
+              It is used to display an element as a block-level grid container.
+            </td>
+          </tr>
+          <tr>
+            <th>inline-block</th>
+            <td>
+              It is used to display an element as an inline-level block
+              container.
+            </td>
+          </tr>
+          <tr>
+            <th>inline-flex</th>
+            <td>
+              It is used to display an element as an inline-level flex
+              container.
+            </td>
+          </tr>
+          <tr>
+            <th>inline-grid</th>
+            <td>
+              It is used to display an element as an inline-level grid
+              container.
+            </td>
+          </tr>
+          <tr>
+            <th>inline-table</th>
+            <td>It is used to display an inline-level table</td>
+          </tr>
+          <tr>
+            <th>list-item</th>
+            <td>
+              It is used to display all the elements in &lt;li&gt; element.
+            </td>
+          </tr>
+          <tr>
+            <th>run-in</th>
+            <td>
+              It is used to display an element inline or block level, depending
+              on the context.
+            </td>
+          </tr>
+          <tr>
+            <th>table</th>
+            <td>
+              It is used to set the behavior as &lt;table&gt; for all elements.
+            </td>
+          </tr>
+          <tr>
+            <th>table-caption</th>
+            <td>
+              It is used to set the behavior as &lt;caption&gt; for all
+              elements.
+            </td>
+          </tr>
+          <tr>
+            <th>table-column-group</th>
+            <td>
+              It is used to set the behavior as &lt;column&gt; for all elements.
+            </td>
+          </tr>
+          <tr>
+            <th>table-header-group</th>
+            <td>
+              It is used to set the behavior as &lt;header&gt; for all elements.
+            </td>
+          </tr>
+          <tr>
+            <th>table-footer-group</th>
+            <td>
+              It is used to set the behavior as &lt;footer&gt; for all elements.
+            </td>
+          </tr>
+          <tr>
+            <th>table-row-group</th>
+            <td>
+              It is used to set the behavior as &lt;row&gt; for all elements.
+            </td>
+          </tr>
+          <tr>
+            <th>table-cell</th>
+            <td>
+              It is used to set the behavior as &lt;td&gt; for all elements.
+            </td>
+          </tr>
+          <tr>
+            <th>table-column</th>
+            <td>
+              It is used to set the behavior as &lt;col&gt; for all elements.
+            </td>
+          </tr>
+          <tr>
+            <th>table-row</th>
+            <td>
+              It is used to set the behavior as &lt;tr&gt; for all elements.
+            </td>
+          </tr>
+          <tr>
+            <th>none</th>
+            <td>It is used to remove the element.</td>
+          </tr>
+          <tr>
+            <th>initial</th>
+            <td>It is used to set the default value.</td>
+          </tr>
+          <tr>
+            <th>inherit</th>
+            <td>
+              It is used to inherit the property from it’s parents’ elements.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </figure>
-</body>
-
+  </body>
 </html>
