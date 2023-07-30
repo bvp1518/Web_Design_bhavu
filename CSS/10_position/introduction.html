@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      h2 {
+        margin: auto;
+        color: black;
+        border: 2px solid red;
+        text-align: center;
+        background-color: gray;
+      }
+      .container {
+        border: 3px solid green;
+      }
+      li {
+        border: 2px solid black;
+        border-radius: 5px;
+        color: blue;
+        background-color: rgb(213, 245, 234);
+        margin: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Introduction of css Position</h2>
+    <p>
+      The position property in CSS tells about the method of positioning for an
+      element or an HTML entity and the positioning of an element can be done
+      using the top, right, bottom, and left properties. These specify the
+      distance of an HTML element from the edge of the viewport.
+    </p>
+
+    <h3>
+      There are five different types of position properties available in CSS:
+    </h3>
+    <div class="container" id="fixed">
+      <ol>
+        <li>
+          <strong>Fixed position:</strong> Any HTML element with position: fixed
+          property will be positioned relative to the viewport. An element with
+          fixed positioning allows it to remain in the same position even we
+          scroll the page. We can set the position of the element using the top,
+          right, bottom, and left.
+        </li>
+        <li>
+          <strong>Static:</strong> This method of positioning is set by default.
+          If we don't mention the method of positioning for any element, the
+          element has the position: static method by default. By defining
+          Static, the top, right, bottom, and left will not have any control
+          over the element. The element will be positioned with the normal flow
+          of the page.
+        </li>
+        <li>
+          <strong>Relative:</strong> An element with position: relative is
+          positioned relatively with the other elements which are sitting on top
+          of it. If we set its top, right, bottom, or left, other elements will
+          not fill up the gap left by this element. An element with its position
+          set to relative and when adjusted using top, bottom, left, and right
+          will be positioned relative to its original position.
+        </li>
+        <li>
+          <strong>Absolute:</strong> An element with position: absolute will be
+          positioned with respect to its nearest Non-static ancestor. The
+          positioning of this element does not depend upon its siblings or the
+          elements which are at the same level.
+        </li>
+        <li>
+          <strong>Sticky:</strong> Element with position: sticky and top:0
+          played a role between fixed & relative based on the position where it
+          is placed. If the element is placed in the middle of the document then
+          when the user scrolls the document, the sticky element start scrolling
+          until it touched the top. When it touches the top, it will be fixed at
+          the top place in spite of further scrolling. we can stick the element
+          at the bottom, with the bottom property.
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
