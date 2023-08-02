@@ -9,36 +9,60 @@
         margin: 0px;
         padding: 0px;
         background-image: url(img/woman-geb5503672_640.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: #b9adad;
+        width: 97vw;
+        height: 97vh;
+        
       }
       .left {
         border: 2px solid red;
-        margin: 2px;
-        display: inline-block;
+        display: inline-block;       
         position: absolute;
         top: 12px;
         left: 12px;
       }
       .mid {
         border: 2px solid green;
-        margin: 2px auto;
+        margin: 12px auto;
         display: block;
         width: 533px;
       }
       .right {
         border: 2px solid purple;
-        margin: 2px;
         display: inline-block;
         position: absolute;
         top: 12px;
         right: 12px;
       }
+      .navbar li{
+         display: inline-block;
+         font-size: 18px;
+      }
+      .navbar li a{
+        text-decoration: none;
+        padding: 34px 23px;
+        color: black;
+      }
+      .navbar li a:hover{
+        text-decoration:underline;
+        color:blueviolet
     </style>
   </head>
   <body>
     <header class="header">
       <div class="left">This is left</div>
 
-      <div class="mid">this is mid</div>
+      <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+      </div>
 
       <div class="right">this is right</div>
     </header>
