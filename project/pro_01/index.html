@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beuty care</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <style>
       body {
         margin: 0px;
@@ -15,11 +17,11 @@
         background-color: #b9adad;
         width: 97vw;
         height: 97vh;
-        
+        font-family: "Agdasima", sans-serif;
       }
       .left {
         border: 2px solid red;
-        display: inline-block;       
+        display: inline-block;
         position: absolute;
         top: 12px;
         left: 12px;
@@ -37,18 +39,59 @@
         top: 12px;
         right: 12px;
       }
-      .navbar li{
-         display: inline-block;
-         font-size: 18px;
+      .navbar li {
+        display: inline-block;
+        font-size: 18px;
       }
-      .navbar li a{
+      .navbar li a {
         text-decoration: none;
         padding: 34px 23px;
         color: black;
       }
-      .navbar li a:hover{
-        text-decoration:underline;
-        color:blueviolet
+      .navbar li a:hover {
+        text-decoration: underline;
+        color: blueviolet;
+      }
+      .btn {
+        margin: 0px 9px;
+        padding: 4px 8px;
+        font-size: 18 px;
+        border-radius: 10px;
+        background-color: rgb(207, 176, 146);
+        cursor: pointer;
+        font-family: "Agdasima", sans-serif;
+      }
+      .btn:hover {
+        text-decoration: underline;
+        color: blueviolet;
+      }
+      .container {
+        border: 2px solid rgb(25, 23, 23);
+        margin: 50px 100px;
+        padding: 19px 24px;
+        border-radius: 10px;
+        width: 33%;
+      }
+      .form-group input {
+        text-align: center;
+        font-family: "Agdasima", sans-serif;
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+        padding: 10px;
+        border: 3px solid black;
+        border-radius: 6px;
+      }
+      .container h2 {
+        text-align: center;
+        font-family: "Agdasima", sans-serif;
+        color: rgb(4, 94, 94);
+      }
+      .container button {
+        display: block;
+        width: 230px;
+        margin: 20px auto;
+      }
     </style>
   </head>
   <body>
@@ -57,14 +100,32 @@
 
       <div class="mid">
         <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Help</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Help</a></li>
         </ul>
       </div>
 
-      <div class="right">this is right</div>
+      <div class="right">
+        <button class="btn">call us</button>
+        <button class="btn">Email now</button>
+      </div>
+      <div class="container">
+        <h2>Top beauty care</h2>
+        <form action="noaction.php">
+          <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="" placeholder="Enter your age" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="" placeholder="Enter your address" />
+          </div>
+          <button class="btn">submit</button>
+        </form>
+      </div>
     </header>
   </body>
 </html>
