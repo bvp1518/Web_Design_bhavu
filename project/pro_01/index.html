@@ -10,30 +10,34 @@
       body {
         margin: 0px;
         padding: 0px;
-        background-image: url(img/woman-geb5503672_640.jpg);
+        background-image: url(img/WhatsApp\ Image\ 2023-08-03\ at\ 18.16.28.jpg);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
-        background-color: #b9adad;
-        width: 97vw;
+        background-position: cover;
+        background-color: #cfc3c3;
+        width: 97%;
         height: 97vh;
         font-family: "Agdasima", sans-serif;
       }
       .left {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: inline-block;
         position: absolute;
         top: 12px;
         left: 12px;
       }
+      .left img {
+        width: 70px;
+        /* background-color: #b9adad; */
+      }
       .mid {
-        border: 2px solid green;
+        /* border: 2px solid green; */
         margin: 12px auto;
         display: block;
         width: 533px;
       }
       .right {
-        border: 2px solid purple;
+        /* border: 2px solid purple; */
         display: inline-block;
         position: absolute;
         top: 12px;
@@ -67,7 +71,7 @@
       }
       .container {
         border: 2px solid rgb(25, 23, 23);
-        margin: 50px 100px;
+        margin: 100px 700px;
         padding: 19px 24px;
         border-radius: 10px;
         width: 33%;
@@ -96,7 +100,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="left">This is left</div>
+      <div class="left">
+        <img src="img/download.png" alt="" />
+      </div>
 
       <div class="mid">
         <ul class="navbar">
@@ -115,13 +121,13 @@
         <h2>Top beauty care</h2>
         <form action="noaction.php">
           <div class="form-group">
-            <input type="text" name="" placeholder="Enter your name" />
+            <input type="text" name="" placeholder="Enter your Name" />
           </div>
           <div class="form-group">
-            <input type="text" name="" placeholder="Enter your age" />
+            <input type="text" name="" placeholder="Enter your Age" />
           </div>
           <div class="form-group">
-            <input type="text" name="" placeholder="Enter your address" />
+            <input type="text" name="" placeholder="Enter your Address" />
           </div>
           <button class="btn">submit</button>
         </form>
