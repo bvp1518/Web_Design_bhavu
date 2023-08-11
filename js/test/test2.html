@@ -1,0 +1,51 @@
+<!-- 1> Create one input box with type password,
+2> Create button with name "Show Password"
+3> Change Value of button "Hide Password", when input type "text"
+4> Change "show password" when input type "Password" -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+</head>
+
+<body>
+    <label for="name">name</label>
+    <input type="text" name="name" id="name"><br><br>
+
+    <label for="password">password</label>
+    <input type="password" name="pwd" id="password">
+
+    <input type="button" onclick="click" id="spwd" value="show password"></input>
+    <div id="display"></div>
+
+    <script>
+        document.getElementById("spwd").addEventListener("click", function data() {
+            // console.log("test");
+            let passData = document.getElementById("password");
+            // console.log(passData);
+            if (passData.type == "password") {
+                passData.type = "text";
+                //     if (passData.type = "text") 
+                //     { document.getElementById("spwd").value
+                //  }else{
+
+                //  }
+                // console.log(passData.type);
+            } else {
+                passData.type = "password";
+                // console.log(passData.type);
+            }
+            document.getElementById("display").innerHTML =
+                "password has been declare by ============>  " + passData.type;
+
+        });
+
+    </script>
+</body>
+
+</html>
