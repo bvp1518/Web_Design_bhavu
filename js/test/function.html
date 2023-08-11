@@ -12,12 +12,20 @@
         <label for="name">Name</label>
         <input type="text" value="text" name="name" id="name">
         <input type="button" onclick="psw()" value="click" name="btn" id="btn">
+        <div class="display"></div>
     </div>
     <script>
-        let name1 = document.getElementById("name").value;
-        console.log(name1);
-
-
+        document.getElementById("btn").addEventListener("click", function psw() {
+            let name1 = document.getElementById("name").value;
+            console.log(name1);
+            if (name1 = name) {
+                document.getElementById("display").innerHTML =
+                    "your name is ======> " + name1;
+            } else {
+                document.getElementById("display").innerHTML =
+                    "Please enter your name";
+            }
+        });
     </script>
 </body>
 
