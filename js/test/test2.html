@@ -30,14 +30,12 @@
             // console.log(passData);
             if (passData.type == "password") {
                 passData.type = "text";
-                //     if (passData.type = "text") 
-                //     { document.getElementById("spwd").value
-                //  }else{
+                document.getElementById("spwd").value = "hide Password"
 
-                //  }
                 // console.log(passData.type);
             } else {
                 passData.type = "password";
+                document.getElementById("spwd").value = "show Password"
                 // console.log(passData.type);
             }
             document.getElementById("display").innerHTML =
