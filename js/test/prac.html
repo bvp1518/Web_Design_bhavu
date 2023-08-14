@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital watch</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body onload="showtime()">
+    <h1>
+
+    </h1>
+</body>
+<script>
+    function showtime() {
+        var d = new Date();
+        console.log(d);
+        var h = d.getHours();
+        console.log(h);
+        var m = d.getMinutes();
+        console.log(m);
+        var s = d.getSeconds();
+        console.log(s);
+    }
+    var time = h + " : " + m + " : " + s;
+    console.log(time);
+    document.getElementsByTagName('h1')[0].innertext = time;
+    setTimeout(showtime, 1000)
+
+
+
+</script>
+
+</html>
