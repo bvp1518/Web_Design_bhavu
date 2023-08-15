@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital watch</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body onload="showtime()">
+    <h1>
+
+    </h1>
+    <div class="main">
+        <div class="display">
+            time
+        </div>
+        <button id="btn" onclick="showtime()">
+            Start clock
+        </button>
+    </div>
+</body>
+<script>
+
+    function showtime() {
+        var d = new Date();
+        // console.log(d);
+        var h = d.getHours();
+        // console.log(h);
+        var m = d.getMinutes();
+        // console.log(m);
+        var s = d.getSeconds();
+        // console.log(s);
+        var time = h + " : " + m + " : " + s;
+
+        h = h < 10 ? + "0" + h : h;
+        m = m < 10 ? + "0" + m : m;
+        s = s < 10 ? + "0" + s : s;
+
+        // console.log(time);
+        // document.getElementsByTagName('h1')[0].innerText = time;
+        // setTimeout(showtime, 1000);
+        let display = document.getElementsByClassName("display")
+
+        document.getElementById('btn').addEventListener("click", showtime() {
+            display.innerText = time
+        })
+        setTimeout(showtime, 1000);
+
+
+
+    }
+
+
+
+</script>
+
+</html>

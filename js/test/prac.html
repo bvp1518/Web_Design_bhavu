@@ -18,26 +18,34 @@
     <h1>
 
     </h1>
+    <script>
+
+        function showtime() {
+            var d = new Date();
+            // console.log(d);
+            var h = d.getHours();
+            // console.log(h);
+            var m = d.getMinutes();
+            // console.log(m);
+            var s = d.getSeconds();
+            // console.log(s);
+            var time = h + " : " + m + " : " + s;
+
+            h = h < 10 ? + "0" + h : h;
+            m = m < 10 ? + "0" + m : m;
+            s = s < 10 ? + "0" + s : s;
+
+            // console.log(time);
+            document.getElementsByTagName('h1')[0].innerText = time;
+            setTimeout(showtime, 1000);
+
+
+
+        }
+
+
+
+    </script>
 </body>
-<script>
-    
-    function showtime() {
-        var d = new Date();
-        console.log(d);
-        var h = d.getHours();
-        console.log(h);
-        var m = d.getMinutes();
-        console.log(m);
-        var s = d.getSeconds();
-        console.log(s);
-        var time = h + " : " + m + " : " + s;
-        console.log(time);
-        document.getElementsByTagName('h1')[0].innerText = time;
-        setTimeout(showtime, 1000);
-    }   
-
-
-
-</script>
 
 </html>
