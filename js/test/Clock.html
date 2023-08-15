@@ -6,60 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital watch</title>
     <style>
-        h1 {
-            text-align: center;
-            font-size: 50px;
-            font-family: 'Times New Roman', Times, serif;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            margin: 25px;
+            /* background-color: yellow; */
+            background: rgb(216, 191, 216);
+            background: radial-gradient(circle, rgba(216, 191, 216, 1) 0%, rgba(241, 124, 124, 1) 100%);
+            border: 25px groove purple;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #display {
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 7rem;
+            text-shadow: 3px 3px 5px red;
+            color: rgb(17, 7, 100);
+
         }
     </style>
 </head>
 
-<body onload="showtime()">
-    <h1>
-
-    </h1>
+<body>
+    <h1></h1>
     <div class="main">
-        <div class="display">
-            time
-        </div>
-        <button id="btn" onclick="showtime()">
-            Start clock
-        </button>
+        <div id="display">time</div>
     </div>
+    <script>
+        function showtime() {
+
+            let d = new Date();
+            // console.log(d);
+            let h = d.getHours();
+            // console.log(h);
+            let m = d.getMinutes();
+            // console.log(m);
+            let s = d.getSeconds();
+            // console.log(s);
+
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+            // console.log(time);
+            let time = h + " : " + m + " : " + s;
+
+            document.getElementById('display').innerText = time;
+            setTimeout(showtime, 1000);
+
+
+
+        }
+
+        showtime();
+
+    </script>
 </body>
-<script>
-
-    function showtime() {
-        var d = new Date();
-        // console.log(d);
-        var h = d.getHours();
-        // console.log(h);
-        var m = d.getMinutes();
-        // console.log(m);
-        var s = d.getSeconds();
-        // console.log(s);
-        var time = h + " : " + m + " : " + s;
-
-        h = h < 10 ? + "0" + h : h;
-        m = m < 10 ? + "0" + m : m;
-        s = s < 10 ? + "0" + s : s;
-
-        // console.log(time);
-        // document.getElementsByTagName('h1')[0].innerText = time;
-        // setTimeout(showtime, 1000);
-        let display = document.getElementsByClassName("display")
-
-        document.getElementById('btn').addEventListener("click", showtime() {
-            display.innerText = time
-        })
-        setTimeout(showtime, 1000);
-
-
-
-    }
-
-
-
-</script>
 
 </html>
