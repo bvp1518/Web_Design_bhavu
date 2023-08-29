@@ -7,15 +7,35 @@
     <title>Practical of animation</title>
 </head>
 <style>
-    .box img {
+    .box {
         height: 100px;
         width: 100px;
+        padding: 25px;
+        bottom: 50%;
+        position: absolute;
+        -webkit-animation: linear infinite;
+        -webkit-animation-name: run;
+        -webkit-animation-duration: 5s;
+    }
+
+    @-webkit-keyframes run {
+        0% {
+            left: 0;
+        }
+
+        50% {
+            left: 100%;
+        }
+
+        100% {
+            left: 0;
+        }
     }
 </style>
 
 <body>
     <div class="box">
-        <img src="../12_animtion/bycycle/bike-7342379_1280.png" alt="" srcset="">
+        <img src="../12_animtion/bycycle.png" alt="" srcset="">
     </div>
 </body>
 
